@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+
+  font-family: "Young Serif", serif;
+  
+}
+
+.container{
+    padding: 50px;
+}
+
+.section-one{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+.section-one__contact{
+background-color: orangered;
+color:white;
+text-decoration:none;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 5px;
+padding-bottom: 5px;
+display: inline-block;
+margin-top: 10px;
+
+}
+
+.section-one__name{
+    font-size: 60px;
+}
+
+.section-one__role{
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.section-two,.section-three,.section-four,.section-five{
+    margin-top: 20px;
+}
+
+.section-two__disc,.section-three__disc,.section-four__disc,.section-five__disc{
+    margin-top: 10px;
+}
+
+.section-five{
+    background-color:rgb(220, 16, 16);
+    color: white;
+    padding: 20px;
+}
+
+.section-five__title a{
+    color: rgb(4, 70, 96);
+}
+.section-three li,.section-four li{
+    list-style: none;
+}
+.section-three{
+    background: #6462FD;
+    color: black;
+    padding: 20px;
+    display: inline-block;
+    height:200px;
+    border-radius:50px;
+    vertical-align: top;
+}
+
+.section-four{
+    background: #e7040c;
+    color: rgb(4, 4, 4);
+    padding: 20px;
+    display: inline-block;
+    height:200px;
+    border-radius:10px;
+    vertical-align: top;
+}
+
+.contect-form{
+margin: 20px;
+}
+
+.contect-form__input,.contect-form__textarea,.contect-form__submit{
+    margin: 20px;
+}
+
+.contect-form__input{
+    padding: 10px;
+    border: none;
+    border-bottom: solid black 2px;
+}
+
+
+.contect-form__textarea{
+    padding: 10px;
+    border: none;
+    border: solid black 2px;
+}
+
+
+.contect-form__submit{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: orangered;
+     border: none;
+    border: solid black 1px;
+    color:black;
+
+
+}
