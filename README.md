@@ -1,2 +1,1 @@
-# portfoilo-simple-website
-surendar portfolio
+This is a simple and responsive portfolio website built using **HTML** and **basic CSS**. It showcases my personal projects, skills, and contact information in a clean and structured layout. Designed as part of my web development learning journey, this site serves as a digital introduction to who I am and what I’m working on.
