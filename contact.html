@@ -3,67 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact - Surendar</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-<div class="container">
-
-        <div class="section-one">
-            <h1 class="section-one__name">Surendar</h1>
-            <p class="section-one__role">Web developer</p>
-            <a class="section-one__contact" href="index.html">Home</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Surendar</h1>
         </div>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
 
+    <!-- Contact Header -->
+    <section class="contact-header">
+        <h1>Get In Touch</h1>
+        <p>Have a project in mind? Let's work together!</p>
+    </section>
 
-<div class="contact-form"><Form>
-    <table>
+    <!-- Contact Content -->
+    <section class="contact-page">
+        <div class="contact-container">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h2>Let's Connect</h2>
+                <p>I'm always interested in hearing about new projects and opportunities.</p>
+                
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>surendar@email.com</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+91 12345 67890</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Chennai, India</p>
+                    </div>
+                </div>
+                
+                <div class="social-info">
+                    <h4>Follow Me</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
 
-        <tr>
-            <td>Name:</td>
-            <td><input type="text" placeholder="enter your name" class="contect-form__input"> </td>
-        </tr>
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Send Message</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Surendar</h3>
+                <p>Web Developer passionate about creating amazing web experiences.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> surendar@email.com</li>
+                    <li><i class="fas fa-phone"></i> +91 12345 67890</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Chennai, India</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Surendar. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-        <tr>
-            <td>Email:</td>
-            <td><input type="text" placeholder="enter your Email id"class="contect-form__input"> </td>
-        </tr>
-
-
-        <tr>
-            <td>Message:</td>
-            <td><textarea placeholder="enter your Message"class="contect-form__textarea"></textarea> </td>
-        </tr>
-
-        <tr>
-            <td></td>
-            <td><input type="submit"class="contect-form__submit"></td>
-        </tr>
-
-
-
-    </table>
-
-</Form></div>
-
-
-</div>
-
-<div class="section-five"> 
-
-        <h3 class="section-five__title">Social Media: <a href="https://www.linkedin.com/in/surendar369/">linkedin</a>,
-            <a href="surendarltfs369@gamil.com">Email</a>
-        </h3>
-        <p class="section-five__disc">&copy; Surendar</p>
-</div>
-
+    <script src="script.js"></script>
 </body>
 </html>
-
