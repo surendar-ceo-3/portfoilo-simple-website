@@ -1,92 +1,224 @@
-
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surendar - Web Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap"
-        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <div class="container">
-
-        <div class="section-one">
-            <h1 class="section-one__name">Surendar</h1>
-            <p class="section-one__role">Web developer</p>
-            <a class="section-one__contact" href="contact.html">Contact</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Surendar</h1>
         </div>
-
-
-
-        <label>Email:</label><a href="surendarltfs369@gamil.com">surendarltfs369@gamil.com</a><br><br>
-        
-
-        <div calss="section-two">
-            
-            <h2 class="section-two__title">About me</h2>
-        <p class="section-two__disc">I'm Surendar, a passionate and aspiring web developer currently pursuing a comprehensive web development
-            course. With
-            a strong interest in creating visually appealing and user-friendly websites, I’m focused on mastering
-            front-end and
-            back-end technologies. I love turning creative ideas into real-world web solutions and am always eager to
-            learn and
-            explore the latest trends in the digital world. My portfolio showcases projects that reflect my growing
-            skills and
-            dedication to clean, efficient code. I’m excited to collaborate, innovate, and contribute to meaningful
-            projects as
-            I continue my journey in web development.</p>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="contact.html">Contact</a>
         </div>
-
-
-
-        <div class="section-three">
-        <h2 class="secton-three__title">My interest</h2>
-        <ul class="section-three__disc"><li>web developent</li>
-            <li>front-end</li>
-            <li>back-end</li>
-        </ul>
-
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
         </div>
+    </nav>
 
-<div class="section-four">
-            <h2 class="section-four__title">My Projects</h2>
-        <ul class="section-four__disc">
-            <li>
-                <h1>Amazon E-commerce clone </h1>
-                <p> I completed Aazon E-commerce clone with React Js (frontend App)</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h5>👋 Hello, I'm</h5>
+            <h1>Surendar</h1>
+            <h3>Web Developer</h3>
+            <p>Passionate web developer creating beautiful and functional websites with modern technologies.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">View My Work</a>
+                <a href="contact.html" class="btn-secondary">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=755&q=80" alt="Developer">
+        </div>
+    </section>
 
-            </li>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I'm Surendar, a passionate and aspiring web developer currently pursuing a comprehensive web development course. With a strong interest in creating visually appealing and user-friendly websites, I'm focused on mastering front-end and back-end technologies.</p>
+                <p>I love turning creative ideas into real-world web solutions and am always eager to learn and explore the latest trends in the digital world. My portfolio showcases projects that reflect my growing skills and dedication to clean, efficient code.</p>
+                <p>I'm excited to collaborate, innovate, and contribute to meaningful projects as I continue my journey in web development.</p>
+                
+                <div class="skills">
+                    <h3>My Skills</h3>
+                    <div class="skill-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Git</span>
+                        <span>Responsive Design</span>
+                        <span>UI/UX</span>
+                        <span>Node.js</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-stats">
+                <div class="stat-card">
+                    <h3>5+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-card">
+                    <h3>3</h3>
+                    <p>Technologies Mastered</p>
+                </div>
+                <div class="stat-card">
+                    <h3>100%</h3>
+                    <p>Client Satisfaction</p>
+                </div>
+                <div class="stat-card">
+                    <h3>24/7</h3>
+                    <p>Support Available</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <li>
-                <h1>Travel website</h1>
-                <p> i completed a travel website which is going to help many people to take a trip with them</p>
+    <!-- Interests Section -->
+    <section class="interests">
+        <h2>My Interests</h2>
+        <div class="interests-grid">
+            <div class="interest-card">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Building responsive and dynamic websites</p>
+            </div>
+            <div class="interest-card">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Front-End</h3>
+                <p>Creating beautiful user interfaces</p>
+            </div>
+            <div class="interest-card">
+                <i class="fas fa-server"></i>
+                <h3>Back-End</h3>
+                <p>Developing robust server solutions</p>
+            </div>
+            <div class="interest-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Responsive Design</h3>
+                <p>Mobile-first approach</p>
+            </div>
+        </div>
+    </section>
 
-            </li>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <!-- Amazon Clone -->
             <div class="project-card">
-    <h3>Nostra AI E-commerce</h3>
-    <p>A fully functional e-commerce website with AI Style Assistant. Features include product filtering, wishlist, quick view, weather-based recommendations, and outfit builder.</p>
-    <div class="project-links">
-        <a href="https://surendar-ceo-3.github.io/nostra-AI-assistants-/" target="_blank" class="btn">🔗 Live Demo</a>
-        <a href="https://github.com/surendar-ceo-3/nostra-AI-assistants-" target="_blank" class="btn">💻 GitHub Code</a>
-    </div>
-</div>
-        </ul>
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Amazon Clone">
+                </div>
+                <div class="project-content">
+                    <h3>Amazon E-commerce Clone</h3>
+                    <p>Completed Amazon E-commerce clone with React Js (frontend App). Features include product listing, cart functionality, and user authentication.</p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>CSS</span>
+                        <span>Firebase</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn-live"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="#" class="btn-code"><i class="fab fa-github"></i> GitHub Code</a>
+                    </div>
+                </div>
+            </div>
 
-</div>
+            <!-- Nostra AI E-commerce -->
+            <div class="project-card featured">
+                <div class="project-badge">✨ Latest Project</div>
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Nostra AI">
+                </div>
+                <div class="project-content">
+                    <h3>Nostra AI E-commerce <span class="ai-badge"><i class="fas fa-robot"></i> AI</span></h3>
+                    <p>A fully functional e-commerce website with AI Style Assistant. Features include product filtering, wishlist, quick view, weather-based recommendations, and outfit builder.</p>
+                    <div class="project-tech">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>AI Features</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://surendar-ceo-3.github.io/nostra-AI-assistants-/" target="_blank" class="btn-live"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://github.com/surendar-ceo-3/nostra-AI-assistants-" target="_blank" class="btn-code"><i class="fab fa-github"></i> GitHub Code</a>
+                    </div>
+                </div>
+            </div>
 
-<div class="section-five"> 
+            <!-- Travel Website -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=1421&q=80" alt="Travel Website">
+                </div>
+                <div class="project-content">
+                    <h3>Travel Website</h3>
+                    <p>Completed a travel website which helps people plan their trips with destination guides, booking forms, and travel tips.</p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn-live"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="#" class="btn-code"><i class="fab fa-github"></i> GitHub Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <h3 class="section-five__title">Social Media: <a href="https://www.linkedin.com/in/surendar369/">linkedin</a>,
-            <a href="surendarltfs369@gamil.com">Email</a>
-        </h3>
-        <p class="section-five__disc">&copy; Surendar</p>
-</div>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Surendar</h3>
+                <p>Web Developer passionate about creating amazing web experiences.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> surendar@email.com</li>
+                    <li><i class="fas fa-phone"></i> +91 12345 67890</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Chennai, India</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Surendar. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-
-    </div>
+    <script src="script.js"></script>
 </body>
-
-
+</html>
