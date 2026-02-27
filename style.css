@@ -112,5 +112,38 @@ margin: 20px;
     border: solid black 1px;
     color:black;
 
+    .project-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.project-links a {
+    display: inline-block;
+    padding: 8px 20px;
+    background: #6C5CE7;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.project-links a:hover {
+    background: #5649C0;
+    transform: translateY(-2px);
+}
+
+.project-links a:last-child {
+    background: #2C3A47;
+}
+
+.project-links a:last-child:hover {
+    background: #1E272E;
+}
+
+
 
 }
